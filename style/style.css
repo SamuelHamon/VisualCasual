@@ -1,0 +1,181 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("../src/pexels-carlos-oliva-3586966.jpg") repeat-y;
+    background-position: center;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    text-align: center;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    padding-bottom: 14px;
+}
+
+main {
+    padding: 10px;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    font-size: 17px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#form #reset {
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    transition-duration: 0.3s;
+}
+
+#form #reset:hover {
+    color: red;
+    font-size: 17px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#form #search {
+    width: 400px;
+    height: 25px;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition-duration: 0.3s;
+}
+
+#form #search:hover {
+    background-color: rgba(255, 255, 255);
+    transition-duration: 0.3s;
+}
+
+#ui-id-1 {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 300px;
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.ui-menu-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.ui-menu-item:hover {
+    color: royalblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+table {
+    margin: auto;
+}
+
+.movieIntro td {
+    padding: 20px 20px;
+}
+
+.movieInfos,
+.movieResume,
+.item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    display: inline-block;
+}
+
+.movieInfos{
+    text-align: initial;
+}
+
+.movieResume {
+    margin: 10px;
+}
+
+.movieVideo iframe {
+    height: 500px;
+    width: 854px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item {
+    margin: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.item p {
+    margin-top: 0px;
+}
+
+footer {
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: black;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer hr {
+    width: 250px;
+}
+
+footer a {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+footer a:hover {
+    color: rgb(0, 150, 150);
+    transition-duration: 0.3s;
+}
