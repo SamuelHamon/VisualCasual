@@ -121,7 +121,7 @@ table {
     display: inline-block;
 }
 
-.movieInfos{
+.movieInfos {
     text-align: initial;
 }
 
@@ -162,7 +162,7 @@ footer {
     padding-bottom: 10px;
     background-color: black;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -178,4 +178,41 @@ footer a {
 footer a:hover {
     color: rgb(0, 150, 150);
     transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 895px) {
+    .movieVideo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .movieImage img {
+        width: 150px;
+        height: 200px;
+    }
+
+    footer hr {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    #form #search {
+        width: 95%;
+    }
+
+    td {
+        display: block;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header table {
+        margin-right: 0px;
+    }
 }
