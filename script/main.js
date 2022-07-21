@@ -10,7 +10,6 @@ $(document).ready(function () {
                 },
                 dataType: "json",
                 success: function (data) {
-                    console.log(data);
                     response($.map(data.Search, function (item) {
                         return {
                             label: item.Title + ' (' + item.Type + ' ' + item.Year + ')',
@@ -25,7 +24,8 @@ $(document).ready(function () {
                 url: "https://imdb-api.com/fr/API/Title/k_uggjnm6p/" + ui.item.id + "/Trailer,",
                 dataType: "json",
                 success: function (data) {
-                    console.log(data);
+                    //on enlève le logo
+                    $(".logo").css("display", "none");
 
                     if ($(".movieTitle").is(':empty') == false) {
                         $(".movieTitle").empty();

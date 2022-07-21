@@ -23,6 +23,12 @@ header {
     padding-bottom: 14px;
 }
 
+header img,
+.logo img {
+    height: 135px;
+    width: 240px;
+}
+
 main {
     padding: 10px;
 }
@@ -176,7 +182,7 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(0, 150, 150);
+    color: royalblue;
     transition-duration: 0.3s;
 }
 
@@ -203,16 +209,36 @@ footer a:hover {
         width: 95%;
     }
 
+    #ui-id-1 {
+        width: 90%;
+    }
+
     td {
         display: block;
     }
 
-    header img {
+    header img,
+    .logo img {
         width: 120px;
-        height: 120px;
+        height: 67.5px;
+    }
+}
+
+@media screen and (max-width: 242px) {
+    .movieInfos ul {
+        padding: 0px;
+        list-style-position: inside;
     }
 
-    header table {
-        margin-right: 0px;
+    .movieImage img,
+    .otherMovies img {
+        width: 75px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 202px) {
+    .movieInfos {
+        display: none;
     }
 }
